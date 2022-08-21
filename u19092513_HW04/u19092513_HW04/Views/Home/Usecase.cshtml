@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "Usecase";
+}
+
+<h2>My usecases and class diagram</h2>
+
+<div>
+    @foreach (var file in ViewBag.images)
+    {
+        <img src="~/App_Data/@Path.GetFileName(file)" />
+    }
+</div>
+
+
+
